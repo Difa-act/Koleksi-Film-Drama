@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Film & Drama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Koleksi Film & Drama</h1>
+    <nav>
+      <button class="tab active" data-category="film">Film</button>
+      <button class="tab" data-category="drama">Drama</button>
+      <select id="genreSelect">
+        <option value="all">Semua</option>
+      </select>
+      <button class="toggle-mode" id="themeToggle">🌙 Mode Gelap</button>
+    </nav>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Cari judul...">
+  </div>
+
+  <section class="grid-container" id="collectionContainer"></section>
+
+  <!-- DETAIL FULLSCREEN -->
+  <section class="detail-page" id="detailPage">
+    <div class="detail-header" id="detailHeader"></div>
+    <p id="detailSinopsis"></p>
+    <div class="gallery" id="detailGallery"></div>
+    <div class="back-btn" id="backBtn">⬅ Kembali ke Koleksi</div>
+  </section>
+
+  <footer>© 2025 Koleksi Film & Drama | by difa</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
